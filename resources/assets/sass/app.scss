@@ -1,0 +1,29 @@
+ @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "pokeball";
+
+.input-pokemon{
+  position: relative;
+  top: 250px;
+  margin:0 auto;
+  display:block;
+  width:400px;
+}
+
+ .pokemon {
+   margin:5px;
+   border: 1px solid black;
+   border-radius:4px;
+   h4,img{
+     margin:0 auto;
+     display:block;
+     div{
+       float:right;
+       display:inline-block;
+     }
+   }
+
+ }
+ .chart-wrapper{
+   canvas{
+   width:100px;
+ }}

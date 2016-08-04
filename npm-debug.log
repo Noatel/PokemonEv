@@ -1,0 +1,195 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bower-npm-resolver' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'bower-npm-resolver', null ]
+7 verbose cache add spec bower-npm-resolver
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'bower-npm-resolver',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'bower-npm-resolver',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed bower-npm-resolver@*
+10 verbose addNamed "*" is a valid semver range for bower-npm-resolver
+11 silly addNameRange { name: 'bower-npm-resolver', range: '*', hasData: false }
+12 silly mapToRegistry name bower-npm-resolver
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/bower-npm-resolver
+16 verbose addNameRange registry:https://registry.npmjs.org/bower-npm-resolver not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/bower-npm-resolver
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:13:11 PM
+20 verbose request id 5367383d28f0b3f4
+21 http request GET https://registry.npmjs.org/bower-npm-resolver
+22 http 200 https://registry.npmjs.org/bower-npm-resolver
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"BBJB80VUW4N986P5ORWY65OYM"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '3390',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 02 Aug 2016 19:13:12 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-ams4427-AMS',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '1',
+23 verbose headers   'x-timer': 'S1470165192.176551,VS0,VE721',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"BBJB80VUW4N986P5ORWY65OYM"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '3390',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 02 Aug 2016 19:13:12 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-ams4427-AMS',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1470165192.176551,VS0,VE721',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving bower-npm-resolver to /Users/NoahTelussa/.npm/registry.npmjs.org/bower-npm-resolver/.cache.json
+26 silly addNameRange number 2 { name: 'bower-npm-resolver', range: '*', hasData: true }
+27 silly addNameRange versions [ 'bower-npm-resolver',
+27 silly addNameRange   [ '0.1.0', '0.1.1', '0.2.0', '0.3.0', '0.4.0' ] ]
+28 silly addNamed bower-npm-resolver@0.4.0
+29 verbose addNamed "0.4.0" is a plain semver version for bower-npm-resolver
+30 silly mapToRegistry name bower-npm-resolver
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/bower-npm-resolver
+34 verbose addRemoteTarball https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz',
+35 verbose addRemoteTarball   '7c4817e3f2f8674cadac49b0ac35e45bc1928881' ]
+36 info retry fetch attempt 1 at 9:13:13 PM
+37 info attempt registry request try #1 at 9:13:13 PM
+38 http fetch GET https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz
+39 http fetch 200 https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz
+40 silly fetchAndShaCheck shasum 7c4817e3f2f8674cadac49b0ac35e45bc1928881
+41 verbose addTmpTarball /var/folders/3b/_tjr91q55rdgdp5bbkvpvn340000gn/T/npm-35584-7fbe50ae/registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for bower-npm-resolver@0.4.0
+43 silly cache afterAdd bower-npm-resolver@0.4.0
+44 verbose afterAdd /Users/NoahTelussa/.npm/bower-npm-resolver/0.4.0/package/package.json not in flight; writing
+45 verbose afterAdd /Users/NoahTelussa/.npm/bower-npm-resolver/0.4.0/package/package.json written
+46 silly install resolved [ { name: 'bower-npm-resolver',
+46 silly install resolved     version: '0.4.0',
+46 silly install resolved     description: 'Use npm as a registry for your Bower Dependencies',
+46 silly install resolved     main: 'src/resolver.js',
+46 silly install resolved     scripts:
+46 silly install resolved      { lint: 'gulp lint',
+46 silly install resolved        test: 'gulp test',
+46 silly install resolved        release: 'gulp release',
+46 silly install resolved        'release:patch': 'gulp release:patch',
+46 silly install resolved        'release:minor': 'gulp release:minor',
+46 silly install resolved        'release:major': 'gulp release:major' },
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git+https://github.com/mjeanroy/bower-npm-resolver.git' },
+46 silly install resolved     keywords: [ 'bower-resolver' ],
+46 silly install resolved     author: { name: 'Mickael Jeanroy', email: 'mickael.jeanroy@gmail.com' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     bugs: { url: 'https://github.com/mjeanroy/bower-npm-resolver/issues' },
+46 silly install resolved     homepage: 'https://github.com/mjeanroy/bower-npm-resolver',
+46 silly install resolved     dependencies:
+46 silly install resolved      { 'escape-string-regexp': '^1.0.5',
+46 silly install resolved        npm: '>=1.0.0',
+46 silly install resolved        q: '1.4.1',
+46 silly install resolved        request: '2.72.0',
+46 silly install resolved        'tar-fs': '1.12.0',
+46 silly install resolved        tmp: '0.0.28',
+46 silly install resolved        underscore: '1.8.3' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { eslint: '2.9.0',
+46 silly install resolved        'eslint-config-google': '0.5.0',
+46 silly install resolved        'eslint-config-xo': '0.14.1',
+46 silly install resolved        gulp: '3.9.1',
+46 silly install resolved        'gulp-bump': '2.1.0',
+46 silly install resolved        'gulp-eslint': '2.0.0',
+46 silly install resolved        'gulp-git': '1.7.1',
+46 silly install resolved        'gulp-jasmine': '2.3.0',
+46 silly install resolved        'gulp-util': '3.0.7',
+46 silly install resolved        'jasmine-core': '2.4.1',
+46 silly install resolved        'run-sequence': '1.1.5' },
+46 silly install resolved     gitHead: '92aacb3bd5195fff01d8d3faee22f1a5bcca6318',
+46 silly install resolved     _id: 'bower-npm-resolver@0.4.0',
+46 silly install resolved     _shasum: '7c4817e3f2f8674cadac49b0ac35e45bc1928881',
+46 silly install resolved     _from: 'bower-npm-resolver@*',
+46 silly install resolved     _npmVersion: '3.8.6',
+46 silly install resolved     _nodeVersion: '6.0.0',
+46 silly install resolved     _npmUser: { name: 'mjeanroy', email: 'mickael.jeanroy@gmail.com' },
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '7c4817e3f2f8674cadac49b0ac35e45bc1928881',
+46 silly install resolved        tarball: 'https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     _npmOperationalInternal:
+46 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+46 silly install resolved        tmp: 'tmp/bower-npm-resolver-0.4.0.tgz_1463939517669_0.6508136605843902' },
+46 silly install resolved     directories: {},
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/bower-npm-resolver/-/bower-npm-resolver-0.4.0.tgz' } ]
+47 info install bower-npm-resolver@0.4.0 into /usr/local/lib
+48 info installOne bower-npm-resolver@0.4.0
+49 verbose installOne of bower-npm-resolver to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/NoahTelussa/.npm/_locks/bower-npm-resolver-e6eb0442ca37c829.lock for /usr/local/lib/node_modules/bower-npm-resolver
+51 silly install write writing bower-npm-resolver 0.4.0 to /usr/local/lib/node_modules/bower-npm-resolver
+52 verbose unbuild lib/node_modules/bower-npm-resolver
+53 silly gentlyRm /usr/local/lib/node_modules/bower-npm-resolver is being purged from base /usr/local
+54 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower-npm-resolver
+55 verbose tar unpack /Users/NoahTelussa/.npm/bower-npm-resolver/0.4.0/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/bower-npm-resolver
+57 silly gentlyRm /usr/local/lib/node_modules/bower-npm-resolver is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower-npm-resolver
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 error tar.unpack untar error /Users/NoahTelussa/.npm/bower-npm-resolver/0.4.0/package.tgz
+61 verbose unlock done using /Users/NoahTelussa/.npm/_locks/bower-npm-resolver-e6eb0442ca37c829.lock for /usr/local/lib/node_modules/bower-npm-resolver
+62 verbose fstream_path /usr/local/lib/node_modules/bower-npm-resolver
+63 verbose fstream_type Directory
+64 verbose fstream_class DirWriter
+65 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bower-npm-resolver'
+65 verbose stack     at Error (native)
+66 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+66 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+66 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+67 verbose cwd /Users/NoahTelussa/Code/Noah/pokemon-ev
+68 error Darwin 15.0.0
+69 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "bower-npm-resolver"
+70 error node v4.2.2
+71 error npm  v2.14.7
+72 error path /usr/local/lib/node_modules/bower-npm-resolver
+73 error code EACCES
+74 error errno -13
+75 error syscall mkdir
+76 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bower-npm-resolver'
+76 error     at Error (native)
+76 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/bower-npm-resolver']
+76 error   errno: -13,
+76 error   code: 'EACCES',
+76 error   syscall: 'mkdir',
+76 error   path: '/usr/local/lib/node_modules/bower-npm-resolver',
+76 error   fstream_type: 'Directory',
+76 error   fstream_path: '/usr/local/lib/node_modules/bower-npm-resolver',
+76 error   fstream_class: 'DirWriter',
+76 error   fstream_stack:
+76 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+76 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+76 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+77 error Please try running this command again as root/Administrator.
+78 verbose exit [ -13, true ]
+79 verbose unbuild lib/node_modules/bower-npm-resolver
+80 silly gentlyRm /usr/local/lib/node_modules/bower-npm-resolver is being purged from base /usr/local
+81 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/bower-npm-resolver
