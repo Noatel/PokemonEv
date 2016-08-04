@@ -21,3 +21,4 @@ Route::get('/secret', 'Maincontroller@getPokemon');
 
 
 Route::post('/refresh_database/', 'Maincontroller@refresh_database');
+
