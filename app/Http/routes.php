@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', 'Maincontroller@index');
-Route::post('/search/{data}', 'Maincontroller@search');
+Route::get('/', 'MainController@index');
+Route::post('/search/{data}', 'MainController@search');
 
 
 
-Route::get('/pokedex', 'Maincontroller@pokedex');
-Route::get('/secret', 'Maincontroller@getPokemon');
+Route::get('/pokedex', 'MainController@pokedex');
+Route::get('/secret', 'MainController@getPokemon');
 
 
-Route::post('/refresh_database/', 'Maincontroller@refresh_database');
+Route::post('/refresh_database/', 'MainController@refresh_database');
 
