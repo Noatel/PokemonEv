@@ -5796,15 +5796,22 @@ button.close {
   width: 400px; }
 
 .pokemon {
-  margin: 5px;
+  margin: 16px;
   border: 1px solid black;
   border-radius: 4px; }
-  .pokemon h4, .pokemon img {
+  .pokemon .header-wrapper {
     margin: 0 auto;
     display: block; }
-    .pokemon h4 div, .pokemon img div {
-      float: right;
-      display: inline-block; }
+  .pokemon h4 {
+    width: 100%;
+    display: inline-block; }
+    .pokemon h4 div {
+      display: inline-block;
+      position: relative;
+      left: 15px; }
+  .pokemon img {
+    margin: 0 auto;
+    display: block; }
 
 .chart-wrapper canvas {
   width: 100px; }

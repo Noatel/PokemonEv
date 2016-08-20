@@ -12,25 +12,34 @@ use App\Http\Requests;
 
 class MainController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         return view('index');
     }
-    public function pokedex(){
+
+    public function pokedex()
+    {
 
         return view('pokedex');
     }
-    public function search(Request $request){
+
+    public function search(Request $request)
+    {
 
         $query = $request->data;
-        $search = DB::table('pokemon')->where('name', 'LIKE', '%' . $query . '%')->get();
+
+        if (ctype_digit($query)) {
+            $search = DB::table('pokemon')->where('number', '=', $query)->get();
+            return $search;
+        } else {
+            $search = DB::table('pokemon')->where('name', 'LIKE', '%' . $query . '%')->get();
 
 
-
-
-        return $search;
-
+            return $search;
+        }
     }
+
     public function getPokemon()
     {
         $opts = array('http' => array('header' => "User-Agent:MyAgent/1.0\r\n"));
@@ -38,13 +47,15 @@ class MainController extends Controller
         $header = file_get_contents('http://pokemon.dev/pokedex', false, $context);
 
         $html = file_get_html($header);
-        foreach($html->find('tr') as $row) {
+        foreach ($html->find('tr') as $row) {
             // Parse table row here
         }
 
 
     }
-    public function refresh_database(Request $request){
+
+    public function refresh_database(Request $request)
+    {
 
 
         dd('good try');

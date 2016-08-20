@@ -39,12 +39,30 @@
             function (data) {
                 $('#store-pokemon').empty();
                 for (var i = 0; i < data.length; i++) {
-                    $('#store-pokemon').append(
-                            '<div class="col-md-2 pokemon">' +
-                            '<img src="http://www.pokestadium.com/sprites/black-white/' + data[i].name.toLowerCase() + '.png" alt="' + data[i].name + '">' +
-                            '<h4> #' + data[i].number + '<div>' + data[i].name + '</div></h4> ' +
-                            '<canvas id="pokechart-' + data[i].number + '" width="400" height="400"></canvas> </div>'
-                    );
+                    if( data[i].number == '029' ) {
+                        $('#store-pokemon').append(
+                                '<div class="col-md-2 pokemon">' +
+                                '<img src="http://www.pokestadium.com/sprites/black-white/nidoranf.png" alt="Nidoran female">' +
+                                '<div class="header-wrapper"><h4> #' + data[i].number + '<div>' + data[i].name + '</div></h4></div> ' +
+                                '<canvas id="pokechart-' + data[i].number + '" width="400" height="400"></canvas> </div>'
+                        );
+                    }
+                    else if( data[i].number == '032'){
+                        $('#store-pokemon').append(
+                                '<div class="col-md-2 pokemon">' +
+                                '<img src="http://www.pokestadium.com/sprites/black-white/nidoranm.png" alt="Nidoran male">' +
+                                '<div class="header-wrapper"><h4> #' + data[i].number + '<div>' + data[i].name + '</div></h4></div> ' +
+                                '<canvas id="pokechart-' + data[i].number + '" width="400" height="400"></canvas> </div>'
+                        );
+                    } else {
+                            $('#store-pokemon').append(
+                                    '<div class="col-md-2 pokemon">' +
+
+                                    '<img src="http://www.pokestadium.com/sprites/black-white/' + data[i].name.toLowerCase() + '.png" alt="' + data[i].name + '">' +
+                                    '<div class="header-wrapper"><h4> #' + data[i].number + '<div>' + data[i].name + '</div></h4></div> ' +
+                                    '<canvas id="pokechart-' + data[i].number + '" width="400" height="400"></canvas> </div>'
+                            );
+                    }
                     createPokeChart(data[i].number, data[i].hp, data[i].attack, data[i].defense, data[i].sp_attack, data[i].sp_defense, data[i].speed);
 
 
